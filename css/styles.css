@@ -1,0 +1,229 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+}
+
+body{
+    background-color: #060606;
+    font-family: "Helvetica Neue", sans-serif;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    padding: 0 2rem;
+
+    background-image: url(../img/background-pizza.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    color: #fff;
+}
+
+.container header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    padding: 3rem 2rem;
+}
+
+.container header h1{
+   margin-right: auto; 
+}
+
+.container header h1 img{
+    width: 20rem;
+}
+
+.container header nav{
+    width: 15rem;
+    margin-left: 1rem;
+}
+
+.container header nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.container header nav ul li{
+    list-style-type: none;
+    margin-right: 0.8rem;
+}
+
+.container header nav ul li a{
+    text-decoration: none;
+
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #fff;
+
+    transition: all 0.2s;
+}
+
+.container header nav ul li a:hover{
+    opacity: 0.6;
+    color: #ff4500;
+}
+
+#sabores-pizza{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    margin-top: 8rem;
+    padding-bottom: 6rem;
+}
+
+#sabores-pizza h2{
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 10px #060606;
+
+    font-size: 1.2rem;
+    color: #fff;
+    line-height: 2;
+}
+
+#sabores-pizza table{
+    width: 100%;
+    margin-top: 6rem;
+    
+    background-color: #060606;
+    border-collapse: collapse;
+    clear: both;
+    text-transform: uppercase;
+}
+
+#sabores-pizza table th, td{
+    font-size: 1rem;
+    border: 1px solid #000;
+    padding: 0.3rem;
+    text-align: center;
+}
+
+
+#sabores-pizza table th{
+    font-weight: bold;
+}
+
+
+#sabores-pizza .text-negativo{
+    color: #FB3958;
+}
+
+
+#sabores-pizza .text-positivo{
+    color: #87B50F;
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    padding: 3.5rem 0 1rem 0;
+    margin-bottom: 1.5rem;
+}
+
+footer a{
+    margin: 0 auto;
+
+    height: 7rem;
+    width: 30.4rem;
+    background-image: url(../img/logo-helloPizza.png);
+}
+
+footer p{
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+@media(min-width: 600px){
+
+    .container header nav{
+        margin: 0 2rem 0 0;
+    }
+
+    .container header nav ul li a{
+        font-size: 1.5rem;
+    }
+
+    #sabores-pizza{
+        margin-top: 15rem;
+    } 
+
+    #sabores-pizza h2{
+        line-height: 6;
+    }
+
+    #sabores-pizza table th, td{
+        font-size: 1.3rem;
+        padding: 1rem;
+    }
+}
+
+@media(min-width: 768px){
+    .container header nav{
+        width: 20rem;
+    }
+
+    #sabores-pizza{
+        margin-top: 20rem;
+    }
+
+    #sabores-pizza h2{
+        font-size: 1.8rem;
+    }
+
+    #sabores-pizza table th, td{
+        padding: 2rem;
+    }
+    
+
+}
+
+@media(min-width: 992px){
+    .container header h1 img{
+        width: 30rem;
+    }
+
+    #sabores-pizza{
+        margin-top: 28rem;
+    }
+
+    #sabores-pizza h2{
+        font-size: 2.5rem;
+    }
+
+    #sabores-pizza table th, td{
+        padding: 3rem;
+        font-size: 1.6rem;
+    }
+
+}
+
+@media(min-width: 1200px){
+    #sabores-pizza{
+        margin-top: 35rem;
+    }
+
+    #sabores-pizza h2{
+        font-size: 3rem;
+    }
+
+    #sabores-pizza table th, td{
+        padding: 3.5rem;
+        font-size: 2rem;
+    }
+
+}
